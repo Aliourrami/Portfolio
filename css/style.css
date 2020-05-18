@@ -1,0 +1,144 @@
+.nav li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .nav li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav li a {
+        font-size: 10px;
+    }
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+
+.nav li a:hover {
+    color: rgb(82, 82, 82);
+}
+
+/* stroke */
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 80%;
+}
+
+.nav-item {}
+
+
+/* body */
+.bg-black {
+    background-color: #0b0f12;
+    height: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    border-radius: 20px;
+    background-image: url("../images/shadow.png");
+}
+
+.hero {
+    position: relative;
+    /* max-width: 100%;
+    padding: 10px;
+    margin: 90px 30px 30px; */
+}
+
+.hero-image {
+    position: absolute;
+    width: auto;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 62%;
+    height: 70vh;
+}
+
+.hero img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* text */
+.text {
+    /* position: absolute; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    /* top: 100px; */
+    margin: 100px 0;
+    /* width: 50%; */
+    left: 10%;
+    width: 50%;
+}
+
+/* title */
+.text .title {
+    color: #ffffff;
+}
+
+/* Paragraph */
+.text .para {
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
+    line-height: 30px;
+    font-size: 1vw;
+
+
+}
+
+/* div social */
+.social {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    display: block;
+}
+
+.social a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    margin-bottom: 10px;
+}
+
+
+.social a:hover {
+    color: rgb(82, 82, 82);
+}

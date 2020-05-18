@@ -1,0 +1,90 @@
+.text {
+  position: relative;
+}
+
+
+.preLoaderContainer .MMM h3 {
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  /* color: #ff7800; */
+  color: hsla(210, 50%, 85%, 1);
+  /* margin-bottom: -40px; */
+}
+
+.preLoaderContainer .MMM h1 {
+  font-size: 2.7vw;
+  text-align: center;
+  font-family: 'Baloo Thambi 2', cursive;
+  color: #ffffff;
+  /* margin-bottom: 0px; */
+}
+
+.preLoaderContainer .MMM .preLoaderAnimation {
+  /* position: absolute; */
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.preLoaderContainer .MMM .preLoaderAnimation div {
+  position: absolute;
+  top: 70%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(130, 131, 133, 0.932);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+
+.preLoaderContainer .MMM .preLoaderAnimation div:nth-child(1) {
+  left: 6px;
+  animation: preLoaderAnimationEllipsis1 0.6s infinite;
+}
+
+.preLoaderContainer .MMM .preLoaderAnimation div:nth-child(2) {
+  left: 6px;
+  animation: preLoaderAnimationEllipsis2 0.6s infinite;
+}
+
+.preLoaderContainer .MMM .preLoaderAnimation div:nth-child(3) {
+  left: 26px;
+  animation: preLoaderAnimationEllipsis2 0.6s infinite;
+}
+
+.preLoaderContainer .MMM .preLoaderAnimation div:nth-child(4) {
+  left: 45px;
+  animation: preLoaderAnimationEllipsis3 0.6s infinite;
+}
+
+@keyframes preLoaderAnimationEllipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes preLoaderAnimationEllipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes preLoaderAnimationEllipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(19px, 0);
+  }
+}
