@@ -56,7 +56,7 @@ nav.stroke ul li a:hover:after {
     width: 80%;
 }
 
-.nav-item {}
+/* .nav-item {}*/
 
 
 /* body */
@@ -70,9 +70,9 @@ nav.stroke ul li a:hover:after {
 
 .hero {
     position: relative;
-    /* max-width: 100%;
+    max-width: 100%;
     padding: 10px;
-    margin: 90px 30px 30px; */
+    margin: 90px 30px 30px;
 }
 
 .hero-image {
